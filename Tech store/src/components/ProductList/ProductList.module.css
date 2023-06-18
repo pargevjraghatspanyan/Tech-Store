@@ -1,0 +1,10 @@
+.productList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+.opacity{
+    opacity: .2;
+}

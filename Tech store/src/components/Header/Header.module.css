@@ -1,0 +1,234 @@
+header{
+    height: 80px;
+    align-items: center;
+    position: relative;
+    padding: 0px 40px;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color:orange;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+}
+.search input{
+    width: 600px;
+    border-radius: 7px 0 0 7px;
+    border: 1px solid #e5e2d4;
+    padding: 8px 0 8px 20px;
+    outline: 0;
+}
+.search button{
+    border: none;
+    background-color: orange;
+    color: #fff;
+    width: 30px;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search button:hover{
+    background-color:rgb(197, 129, 2)
+}
+.search button:active{
+    background-color:rgb(197, 129, 2)
+}
+.user{
+    margin-right: 5px;
+}
+.shoppingCard{
+    text-decoration: none;
+    color: orange;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.shoppingCard:hover {
+    transform: scale(1.1);
+}
+.cartActive{
+  background-color: #fff;
+  color: orange;
+} 
+
+.user{
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.user img {
+    width: 100%;
+    cursor: pointer;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.userLogOut {
+    width: 60px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:orange;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.userLogOut button {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+
+
+.userStats{
+    position: absolute;
+    top: 55px;
+    right: -200px;
+    width: 105px;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    align-items: center;
+    background-color: #fff;
+    transition: .8s;
+}
+
+.userStats p {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.showUserStats {
+    right: 22px !important;
+}
+
+.totalBox {
+    color: black;
+    padding: 15px;
+    border-bottom: 3px solid orange;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+.totalPrice {
+    color: orange !important;
+  }
+  
+.cartItems {
+    width: 100%;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+.shopCart {
+    position: absolute;
+    top: 75%;
+    right:-50%;
+    width: 400px;
+    height: calc(100vh - 120px);
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid #eee;
+    box-shadow: -15px 15px 20px -15px #ccc;
+    transition:.9s ease-in-out;
+    overflow-y: scroll;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.shopCart::-webkit-scrollbar {
+    width: 0px !important;
+  }
+
+
+.showCart {
+    opacity: 1 !important;
+    visibility: visible !important;
+    right: 0% !important;
+  }
+
+
+.countList {
+    width: 22px;
+    height: 22px;
+    border-radius: 20px;
+    position: absolute;
+    right: 89px;
+    top: -11px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+  }
+
+.countList p {
+    font-size: 12px;
+    color:#fff;
+    font-weight: 900;
+}
+
+.signButtons {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.signButtons a {
+    font-size: 17px;
+    text-decoration: none;
+    color: orange;
+    padding: 5px 15px ;
+    border-radius: 5px 15px 5px 15px;
+    background-color:black;
+    font-weight: bolder;
+    transition: .7s;
+}
+
+.signButtons a:nth-child(odd){
+    color: #fff !important;
+}
+.signButtons a:hover {
+    transform: translateY(-10px);
+}
+

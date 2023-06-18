@@ -1,0 +1,44 @@
+.blockedUser {
+    margin: 25px auto;
+    width: 80%;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.blockedUser h1 {
+    font-size: 85px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: rgb(196, 16, 16);
+}
+
+.blockedUser h2 {
+    font-size: 250px;
+    color: red;
+}
+
+.blockedUser a {
+    text-decoration: none;
+    font-size: 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #022445d1;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    transition: background-color 300ms;
+    transition: 0.7s;
+}
+
+.blockedUser a:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 0 4px 2px #022445d1;
+}

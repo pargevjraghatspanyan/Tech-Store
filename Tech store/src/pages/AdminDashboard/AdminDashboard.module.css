@@ -1,0 +1,176 @@
+img {
+    width: 100px;
+    object-fit: cover;
+    height: auto;
+}
+.admin__title {
+    font-size: 45px;
+    color: orange;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.block {
+    flex: 0 1 30%;
+    height: 150px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.block svg {
+    font-size: 45px;
+}
+
+.block .block__usersCount {
+    font-weight: 700;
+    font-size: 25px;
+    color: orange;
+}
+.block .block__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #022445;
+
+}
+.users__icon {
+    color: #022445;
+}
+
+.backgroundColorRed {
+    background-color: red;
+}
+.untouchable {
+    color: red;
+    font-weight: bolder;
+    font-size: 20px !important;
+}
+.blockedUsers__icon {
+    color: rgb(178, 0, 0) !important;
+}
+.question {
+    font-size: 45px;
+    font-weight: 700;
+    color: green;
+}
+.users__table {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    text-align: left;
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    border-collapse: collapse;
+}
+.users__table th {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(101, 101, 101);
+    padding: 20px 0 30px;
+
+}
+
+.users__table th svg {
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+.users__table td {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+.users__table td img {
+    height: 50px;
+    max-width: 70px;
+    object-fit: contain;
+}
+.table_btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+    border: none;
+
+}
+.table_btn svg {
+    font-size: 16px;
+}
+.deleteBtn {
+    color: #B20000;
+}
+.deleteBtn:hover {
+    color: #ce0c0c;
+    background-color: #f7efc9;
+}
+.deleteBtn:active {
+    color: #a01010;
+}
+.editBtn {
+    color: rgb(20, 111, 209);
+}
+.editBtn:hover {
+    background-color: #f7efc9;
+}
+.editBtn:active {
+    color: #c69938;
+}
+.blockBtn {
+    color: #f20606;
+}
+.blockBtn:hover {
+    background-color: #f7efc9;
+}
+.blockBtn:active {
+    color: #242323;
+
+}
+.unBlockBtn {
+    color: rgb(17, 172, 12);
+
+}
+.unBlockBtn:hover {
+    color: #69ac7c;
+    background-color: #f7efc9;
+}
+.unBlockBtn:active {
+    color: #437c53;
+}
+
+.coverDiv {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 68, 68);
+    opacity: 0.5;
+}
+
+.moveModal {
+    z-index: 2 !important;
+    left: 33% !important;
+}
+
+.time {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #022445;
+    font-weight: bolder
+}
+
+.clock{
+    color:orange;
+}

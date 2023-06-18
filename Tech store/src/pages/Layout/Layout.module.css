@@ -1,0 +1,105 @@
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #022445;
+    padding: 20px 0 20px 20px;
+}
+.admin__section {
+    margin-left: 250px;
+    background-color: white;
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    padding: 15px 30px;
+}
+.menu {
+    margin-top: 70px;
+}
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu__item a {
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__item a svg {
+    margin-right: 10px;
+    color: rgb(20, 111, 209);
+}
+.admin__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+.admin__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.admin__info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.admin__info p {
+    color: white;
+}
+.menu__item a.active {
+    font-weight: 700;
+    color: orange;
+}
+
+.logOut {
+    transition: 0.5s;
+    color: orange;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logOut:hover {
+    font-size: 18px;
+    color: orange !important;
+    opacity: 0.7;
+}
+
+.logOutDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+.shop{
+    margin-left: -10px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.shop a {
+    text-decoration: none;
+    font-size: 45px;
+    padding: 10px;
+    color: orange;
+    transition: .5s;
+}
+
+.shop a:hover {
+    transform: scale(1.1);
+}
+
+.shop svg {
+    color: #fff;
+}

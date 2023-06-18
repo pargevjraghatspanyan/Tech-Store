@@ -1,0 +1,234 @@
+img {
+    width: 100px;
+    object-fit: cover;
+    height: auto;
+}
+.admin__title {
+    font-size: 45px;
+    color: orange;
+}
+.blocks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.block {
+    background-color: rgb(245, 245, 245);
+    width: 30%;
+    height: 320px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.block svg {
+    font-size: 60px;
+}
+
+.block .block__productsCount {
+    font-weight: 700;
+    font-size: 40px;
+    color: orange;
+}
+.block .block__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #022445;
+
+}
+.products__icon {
+    color: #022445;
+}
+.blockedproducts__icon {
+    color: rgb(178, 0, 0);
+}
+.question {
+    font-size: 45px;
+    font-weight: 700;
+    color: green;
+}
+.products__table {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    text-align: left;
+    padding: 10px 30px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(239, 238, 238);
+    border-collapse: collapse;
+}
+.products__table th {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(101, 101, 101);
+    padding: 20px 0 30px;
+
+}
+
+.products__table th svg {
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+.products__table td {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+.products__table td img {
+    height: 50px;
+    max-width: 70px;
+    object-fit: contain;
+}
+.table_btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+    border: none;
+
+}
+.table_btn svg {
+    font-size: 16px;
+}
+.deleteBtn {
+    color: #B20000;
+}
+.deleteBtn:hover {
+    color: #ce0c0c;
+    background-color: #f7efc9;
+}
+.deleteBtn:active {
+    color: #a01010;
+}
+.editBtn {
+    color: rgb(20, 111, 209);
+}
+.editBtn:hover {
+    background-color: #f7efc9;
+}
+.editBtn:active {
+    color: #c69938;
+}
+.blockBtn {
+    color: #f20606;
+}
+.blockBtn:hover {
+    background-color: #f7efc9;
+}
+.blockBtn:active {
+    color: #242323;
+
+}
+.unBlockBtn {
+    color: rgb(17, 172, 12);
+
+}
+.unBlockBtn:hover {
+    color: #69ac7c;
+    background-color: #f7efc9;
+}
+.unBlockBtn:active {
+    color: #437c53;
+}
+
+.coverDiv {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 68, 68);
+    opacity: 0.5;
+}
+
+.moveModal {
+    z-index: 2 !important;
+    left: 33% !important;
+}
+
+.productAddForm {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+.formDiv1 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.editSize {
+    width: 65% !important;
+    gap: 30px !important;
+}
+
+.productAddForm div input {
+    width: 45%;
+    height: fit-content;
+    outline: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 166, 0, 0.326);
+}
+
+.productAddForm input::placeholder {
+    color: rgba(0, 0, 0, 0.67) !important;
+}
+.productAddForm .formFileInput {
+    background-color: transparent;
+
+}
+.formDiv1 input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: rgba(255, 166, 0, 0.326);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.634);
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.formDiv1 input[type=file]::file-selector-button:hover {
+    background: rgba(255, 166, 0, 0.526);
+}
+
+.formButton {
+    text-align: center;
+}
+.addProduct {
+    font-size: 55px;
+    color: #022445;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.productAddForm button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #022445;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 0 15px 0 15px;
+}
+
+.productAddForm button:hover {
+    transform: translateY(-10px);
+}

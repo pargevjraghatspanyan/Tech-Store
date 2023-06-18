@@ -1,0 +1,192 @@
+
+@-webkit-keyframes wawes {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes wawes {
+    from {
+        -moz-transform: rotate(0);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes wawes {
+    from {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+::placeholder {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #022445;
+    opacity: 0.5;
+
+}
+.sectionRegistration {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #022445;
+}
+
+.sectionRegistration .login::before {
+    left: 20%;
+    bottom: -85%;
+    background-color: rgb(20, 111, 209);
+    -webkit-animation: wawes 6s infinite linear;
+    -moz-animation: wawes 6s infinite linear;
+    animation: wawes 6s infinite linear;
+}
+
+.sectionRegistration .login::after {
+    left: 15%;
+    bottom: -80%;
+    background-color: rgba(4, 61, 110, 0.689);
+    -webkit-animation: wawes 7s infinite;
+    -moz-animation: wawes 7s infinite;
+    animation: wawes 7s infinite;
+}
+
+.sectionRegistration input {
+    font-size: 18px !important;
+}
+
+.passwordDiv {
+    position: relative;
+}
+.passwordDiv svg {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    user-select: none;
+    color: #022445;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.titleLogin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    margin-top: 5px;
+    font-size: 85px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.login {
+    overflow: hidden;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 400px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+    -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 0 0 3px 2px #fff;
+}
+.login::after,
+.login::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+
+.login input {
+    outline: none;
+    display: block;
+    border-radius: 5px;
+    font-size: 20px;
+    background: white;
+    width: 100%;
+    border: 1px solid #022445;
+    padding: 10px;
+    margin: 15px -10px;
+    color: #0252a2;
+
+}
+.login > button {
+    width: fit-content;
+    margin-top: 0 !important;
+    background-color: #022445e9;
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0;
+    margin-left: -5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    transition: background-color 300ms;
+    transition: 0.5s;
+
+}
+.login > button:hover {
+    background-color: #022445;
+    transform: scale(1.1);
+}
+
+.redBorder {
+    border: 2px solid red !important;
+    outline: none !important;
+}
+
+.notMember {
+    margin-top: 10px;
+    color: #022445;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.notMember a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.notMember a:hover {
+    color: #022445d1;
+    font-size: 20px;
+}

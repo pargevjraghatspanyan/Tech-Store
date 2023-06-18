@@ -1,0 +1,60 @@
+.myModal {
+    padding: 45px 20px;
+    width: 500px;
+    min-height: 530px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #0252a2;
+    transition: 1s;
+    z-index: 6;
+    position: absolute;
+    top: 12%;
+    left: -50%;
+}
+
+.myModal h2 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.myModal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+.myModal input {
+    outline: none;
+    display: block;
+    border-radius: 5px;
+    font-size: 20px;
+    background: white;
+    width: 100%;
+    border: 1px solid #022445;
+    padding: 10px;
+    color: #0252a2;
+}
+
+.myModal button {
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 400px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 25px !important;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: #022445d1;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    transition: background-color 300ms;
+    transition: 0.5s;
+}
+
+.myModal button:hover {
+    font-size: 25px;
+}
