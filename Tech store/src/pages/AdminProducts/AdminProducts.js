@@ -104,7 +104,7 @@ export const AdminProducts = () => {
                                 <div className={s.formDiv1}>
                                         <input type='text' placeholder='Title' required/>
                                         <input type='text' placeholder='Description' required/>
-                                        <input type='number' placeholder='Price' required/>
+                                        <input type='text' onChange={(e)=>e.target.value = e.target.value.replace(/[^\d]/g,'')} placeholder='Price' required/>
                                         <input className={s.formFileInput}  type='file' onChange={(e)=>handlerChangeImg(e)} required/>
                                 </div>
                                 <div className={s.formButton}>

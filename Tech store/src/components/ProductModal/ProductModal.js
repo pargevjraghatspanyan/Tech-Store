@@ -9,7 +9,7 @@ export const ProductModal = ({modalRef,editProduct,handlerChangeImg}) => {
             <form onSubmit={(e)=>editProduct(e)}>
                     <input placeholder='Title'  type='text'/>
                     <input placeholder='Description'  type='text'/>
-                    <input placeholder='Price'  type='number'/>
+                    <input onChange={(e)=>e.target.value = e.target.value.replace(/[^\d]/g,'')}  placeholder='Price'  type='text'/>
                     <input onChange={(e)=>handlerChangeImg(e)} type='file'/>
                     <button>Edit product</button>
             </form>
